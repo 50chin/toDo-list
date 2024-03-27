@@ -1,0 +1,99 @@
+.toDo__wrapper {
+  border-radius: 16px;
+  box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.16);
+  background: rgb(255, 255, 255);
+}
+
+.toDo__add {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toDo__input {
+  box-sizing: border-box;
+  border: 1px solid rgb(206, 212, 218);
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  width: 356px;
+  height: 38px;
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.toDo__btn-add {
+  border-radius: 4px;
+  background: rgb(39, 40, 41);
+  color: rgb(255, 255, 255);
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  width: 166px;
+  height: 39px;
+}
+
+.toDo__lists {
+  display: none;
+  border-top: 1px solid rgb(222, 226, 230);
+  padding: 36px 24px 0;
+}
+
+.toDo__list {
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toDo__check {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(171, 181, 190);
+  background: rgb(255, 255, 255);
+  accent-color: rgb(119, 73, 248);
+}
+
+.toDo__check:checked ~ p {
+  text-decoration: line-through;
+}
+
+.toDo__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.toDo__buttons {
+  display: flex;
+  padding: 18px 24px;
+  justify-content: space-between;
+  border-radius: 0px 0px 16px 16px;
+  background: rgb(245, 245, 245);
+}
+
+.toDo__btn-deleteFin {
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  background: rgb(108, 117, 125);
+  padding: 10px 16px;
+  width: 214px;
+  height: 39px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.toDo__btn-deleteAll {
+  color: rgb(255, 255, 255);
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  width: 131px;
+  height: 39px;
+  border-radius: 4px;
+  background: rgb(220, 53, 69);
+}

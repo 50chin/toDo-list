@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <script src="./src/script/app.js" defer></script>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">ToDo List</h1>
+      </div>
+    </header>
+    <main>
+      <section class="toDo">
+        <div class="container">
+          <div class="toDo__wrapper">
+            <div class="toDo__add">
+              <form action="">
+                <input
+                  class="toDo__input"
+                  type="text"
+                  placeholder="Добавить ToDo"
+                />
+              </form>
+              <button class="toDo__btn-add">Добавить</button>
+            </div>
+            <div class="toDo__lists"></div>
+            <div class="toDo__buttons">
+              <button class="toDo__btn-deleteFin">Удалить завершенные</button>
+              <button class="toDo__btn-deleteAll">Удалить все</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
