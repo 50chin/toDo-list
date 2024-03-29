@@ -62,6 +62,11 @@
   gap: 16px;
 }
 
+.toDo__right {
+  display: flex;
+  gap: 16px;
+}
+
 .toDo__check {
   width: 16px;
   height: 16px;
@@ -79,6 +84,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
+  padding-right: 10px;
 }
 
 .toDo__bottom {
@@ -115,4 +121,13 @@
   height: 39px;
   border-radius: 4px;
   background: rgb(220, 53, 69);
+}
+
+.toDo__input-edit {
+  width: 450px;
+  height: 38px;
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
 }
