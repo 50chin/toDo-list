@@ -151,13 +151,8 @@ renderToDo(toDo);
 // Функция изменения Done
 function checkboxChecked(id) {
   const check = toDo.find((el) => el.id === id);
-  console.log(check.id);
-  // if (check) {
-  //   check.done = !check.done;
-  //   filterFinish(check.id);
-  // } else {
-  //   filterFinish(id);
-  // }
+  check.done = !check.done;
+  renderToDo(toDo);
 }
 btnDelNode.addEventListener('click', deleteFinish);
 // Функция удаления завершенных
@@ -169,16 +164,4 @@ function deleteFinish() {
 function btnDeleteCrossHandler(id) {
   toDo = toDo.filter((el) => el.id != id);
   renderToDo(toDo);
-}
-
-//Функция по фильтру завершенных
-function filterFinish(id) {
-  toDo = toDo.forEach((el) => {
-    if (el.id == id) {
-      el.done = !el.done;
-    } else {
-      el.done = el.done;
-    }
-    renderToDo(toDo);
-  });
 }
