@@ -109,17 +109,17 @@ function createToDo({ id, text, done }) {
       } else {
         toDoTextNode.innerHTML = newValue;
         value = newValue;
-        editTextSave(id);
       }
+      editTextSave(id);
     }
 
     //Функция по изменению текста завершенных
     function editTextSave(id) {
-      toDo = toDo.forEach((el) => {
+      toDo.forEach((el) => {
         if (el.id == id) {
           el.text = value;
         } else {
-          value = value;
+          return el;
         }
         renderToDo(toDo);
       });
@@ -160,7 +160,7 @@ function deleteFinish() {
   toDo = toDo.filter((el) => !el.done);
   renderToDo(toDo);
 }
-//  Функция по удалению клик на крестик 🗑
+//  Функция по удалению клик на  🗑
 function btnDeleteCrossHandler(id) {
   toDo = toDo.filter((el) => el.id != id);
   renderToDo(toDo);
